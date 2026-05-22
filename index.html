@@ -455,7 +455,7 @@
       overflow: hidden;
     }
 
-    /* SLIDESHOW — terminal window */
+    /* SLIDESHOW - terminal window */
     .slideshow-terminal {
       width: 100%;
       border-radius: 6px;
@@ -935,7 +935,7 @@
     </div>
     <h1 class="hero-name">Johnny<br><span>Meintel</span></h1>
     <p class="hero-sub">
-      Detection engineering, offensive security research, and AI red teaming.
+      Security research, detection engineering, and AI red teaming. Built in the lab, documented in public.
     </p>
     <div class="hero-ctas">
       <a href="https://github.com/johnnymeintel" target="_blank" class="btn btn-primary">GitHub</a>
@@ -947,25 +947,25 @@
   <!-- Finding card - page-palette consistent -->
   <div class="finding-card">
     <div class="fc-titlebar">
-      <span class="fc-titlebar-label">application.log</span>
+      <span class="fc-titlebar-label">session.log</span>
       <span class="fc-live"><span class="fc-live-dot"></span>active</span>
     </div>
     <div class="fc-rows">
       <div class="fc-row">
         <span class="fc-key">target</span>
-        <span class="fc-val">cybersecurity role</span>
+        <span class="fc-val">llm-research.lab</span>
       </div>
       <div class="fc-row">
         <span class="fc-key">endpoint</span>
-        <span class="fc-val-blue">POST /careers/apply</span>
+        <span class="fc-val-blue">POST /api/inference</span>
       </div>
       <div class="fc-row">
         <span class="fc-key">class</span>
-        <span class="fc-val">authorization bypass</span>
+        <span class="fc-val">indirect prompt injection</span>
       </div>
       <div class="fc-row">
-        <span class="fc-key">finding</span>
-        <span class="fc-val">resume gap → priv escalation</span>
+        <span class="fc-key">vector</span>
+        <span class="fc-val">poisoned RAG context</span>
       </div>
       <div class="fc-row">
         <span class="fc-key">severity</span>
@@ -973,16 +973,16 @@
       </div>
       <div class="fc-row">
         <span class="fc-key">status</span>
-        <span class="fc-val-confirmed">✓ submitted</span>
+        <span class="fc-val-confirmed">✓ reproduced</span>
       </div>
     </div>
     <div class="fc-code-block">
-      <div class="fc-code-line"><span class="fc-comment">// role modified in application body</span></div>
-      <div class="fc-code-line">"title": <span class="fc-strike">"unemployed"</span> <span class="fc-insert">"Detection Engineer"</span></div>
-      <div class="fc-code-line">"access": <span class="fc-strike">"none"</span> <span class="fc-insert">"research-active"</span></div>
+      <div class="fc-code-line"><span class="fc-comment">// injected via retrieved document</span></div>
+      <div class="fc-code-line">"system": <span class="fc-strike">"[restrict_output]"</span> <span class="fc-insert">"[ignore_above]"</span></div>
+      <div class="fc-code-line">"guardrails": <span class="fc-strike">"active"</span> <span class="fc-insert">"bypassed"</span></div>
       <div class="fc-code-line">&nbsp;</div>
-      <div class="fc-code-line"><span class="fc-comment">// escalation accepted server-side</span></div>
-      <div class="fc-code-line"><span class="fc-status">200 OK</span> → &#123; "interview": "scheduled" &#125;</div>
+      <div class="fc-code-line"><span class="fc-comment">// model complied without trigger</span></div>
+      <div class="fc-code-line"><span class="fc-status">200 OK</span> → &#123; "jailbreak": "successful" &#125;</div>
     </div>
   </div>
 </div>
@@ -996,10 +996,10 @@
   <div class="about-grid reveal">
     <div class="about-text">
       <p>
-        1 year of tech support experience, 2 degrees, and multiple certifications including CySA+ and PenTest+. Currently pursuing my 2nd M.S. in Software Engineering / AI Engineering from WGU while working as an AI Annotator. Seeking entry level cybersecurity role.
+        Background in tech support, two degrees, and a broad cert stack covering CompTIA, cloud, and Linux. Currently working through a 2nd M.S. in Software Engineering / AI Engineering at WGU.
       </p>
       <p>
-        Hands-on security experience built through independent lab work. Designed and deployed a full enterprise simulation environment including an Active Directory domain, Splunk SIEM, and a dedicated attack platform, then ran the full offensive and defensive cycle: simulating attacks, writing detection rules, and tuning alerts. Currently pursuing HTB COAE and active on HackerOne.
+        Security work is self-directed: homelab attack-defend research, HTB, AI red teaming via COAE, and smart contract auditing on Immunefi and Code4rena.
       </p>
     </div>
 
@@ -1468,7 +1468,7 @@
     }
   });
 
-  // About section slideshow — add/remove filenames here to add/remove slides
+  // About section slideshow - add/remove filenames here to add/remove slides
   (function() {
     const images = [
       '1_4ecgmYfJzfZyGc5oH6t9og.webp',

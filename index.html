@@ -138,11 +138,10 @@
 
     /* Hero section doesn't use the band wrapper */
     #hero {
-      min-height: 100vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 5rem;
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       padding-top: 80px;
       max-width: 1140px; margin: 0 auto;
       padding-left: clamp(1.5rem, 8vw, 8rem);
@@ -944,47 +943,6 @@
     </div>
   </div>
 
-  <!-- Finding card - page-palette consistent -->
-  <div class="finding-card">
-    <div class="fc-titlebar">
-      <span class="fc-titlebar-label">session.log</span>
-      <span class="fc-live"><span class="fc-live-dot"></span>active</span>
-    </div>
-    <div class="fc-rows">
-      <div class="fc-row">
-        <span class="fc-key">target</span>
-        <span class="fc-val">llm-research.lab</span>
-      </div>
-      <div class="fc-row">
-        <span class="fc-key">endpoint</span>
-        <span class="fc-val-blue">POST /api/inference</span>
-      </div>
-      <div class="fc-row">
-        <span class="fc-key">class</span>
-        <span class="fc-val">indirect prompt injection</span>
-      </div>
-      <div class="fc-row">
-        <span class="fc-key">vector</span>
-        <span class="fc-val">poisoned RAG context</span>
-      </div>
-      <div class="fc-row">
-        <span class="fc-key">severity</span>
-        <span class="fc-val-high">HIGH</span>
-      </div>
-      <div class="fc-row">
-        <span class="fc-key">status</span>
-        <span class="fc-val-confirmed">✓ reproduced</span>
-      </div>
-    </div>
-    <div class="fc-code-block">
-      <div class="fc-code-line"><span class="fc-comment">// injected via retrieved document</span></div>
-      <div class="fc-code-line">"system": <span class="fc-strike">"[restrict_output]"</span> <span class="fc-insert">"[ignore_above]"</span></div>
-      <div class="fc-code-line">"guardrails": <span class="fc-strike">"active"</span> <span class="fc-insert">"bypassed"</span></div>
-      <div class="fc-code-line">&nbsp;</div>
-      <div class="fc-code-line"><span class="fc-comment">// model complied without trigger</span></div>
-      <div class="fc-code-line"><span class="fc-status">200 OK</span> → &#123; "jailbreak": "successful" &#125;</div>
-    </div>
-  </div>
 </div>
 
 <!-- ── ABOUT ── -->
@@ -1188,7 +1146,7 @@
       <div class="cert-card cc-incoming">
         <span class="cc-name">HTB COAE</span>
         <span class="cc-issuer">HackTheBox · Certified Offensive AI Expert</span>
-        <span class="cc-status" style="display:flex; align-items:center; gap:0.4rem;"><span class="status-dot amber"></span>In progress · JUL 2026</span>
+        <span class="cc-status" style="display:flex; align-items:center; gap:0.4rem;"><span class="status-dot amber"></span>In progress · End of 2026</span>
       </div>
 
 
